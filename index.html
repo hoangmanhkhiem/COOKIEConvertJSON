@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Cookie converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cookie converter from netscape to json format, supports base64 and plain cookies">
+<style>
+body {
+    text-align: center;
+}
+h1 {
+    margin: 32px 0 16px 0;
+}
+textarea {
+    border: 1px solid rgb(136, 136, 240);
+    border-radius: 4px;
+    min-width: 700px;
+    max-width: 100%;
+    padding: 6px;
+    margin: 8px;
+    outline:none;
+}
+a {
+    margin-top: 16px;
+    text-decoration: none;
+}
+button {
+    padding: 4px 12px;
+    margin-top: 8px;
+}
+@media (max-width: 767px) {
+    textarea {
+        min-width: 90%;
+    }
+}
+h3 {
+    margin-bottom: 0px;
+}
+</style>
+</head>
+<body>
+    <h1>Cookie converter from netscape to json format</h1>
+    <form action="" method="post">
+        <h3>Netscape</h3>
+        <textarea name="cookie" id="cookie" rows="10" placeholder="Your cookie in plain or base64 format" required></textarea>
+        <h3>JSON</h3>
+        <textarea name="result" id="result" rows="10" placeholder="Result" ></textarea>
+        <br>
+        <button type="submit" value="Convert cookies">Convert cookies</button>
+    </form>
+    <a href="https://accovod.com/en?utm_source=cookieConverter">by Accovod (Anti-detect browser for multi-accounts)</a>
+</body>
+</html>
